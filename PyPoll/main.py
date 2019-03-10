@@ -2,6 +2,7 @@
 import os
 import csv
 
+# find path for csv file 
 pollCSV = os.path.join(os.path.dirname(__file__), 'Resources', 'election_data.csv')
 
 # set output path
@@ -54,7 +55,7 @@ with open(pollCSV, 'r') as csvfile:
             OTooley_percentage = round((OTooley_votes / voter_count * 100), 3)
 
     # set conditions to determine winner 
-    if OTooley_percentage > Khan_percentage and OTooley_percentage > Correy_percentage and OTooley_count > Li_percentage: 
+    if OTooley_percentage > Khan_percentage and OTooley_percentage > Correy_percentage and OTooley_percentage > Li_percentage: 
         winner = "O'Tooley"
 
     if Khan_percentage > OTooley_percentage and Khan_percentage > Correy_percentage and Khan_percentage > Li_percentage:
