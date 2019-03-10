@@ -6,6 +6,8 @@ pollCSV = os.path.join(os.path.dirname(__file__), 'Resources', 'election_data.cs
 
 # set output path
 
+output_path = os.path.join("output.csv")
+
 # create empty lists for voter_ID, candidate total, and for each candidate
 voter_ID = []
 candidate = []
@@ -51,7 +53,7 @@ with open(pollCSV, 'r') as csvfile:
             OTooley_votes = int(len(OTooley_count))
             OTooley_percentage = round((OTooley_votes / voter_count * 100), 3)
 
-        # set conditions to determine winner 
+    # set conditions to determine winner 
     if OTooley_percentage > Khan_percentage and OTooley_percentage > Correy_percentage and OTooley_count > Li_percentage: 
         winner = "O'Tooley"
 
@@ -62,6 +64,7 @@ with open(pollCSV, 'r') as csvfile:
         winner = "Li"
 
 
+    # print results
     print("Election Results")
     print("------------------")
     print(f"Total votes: {voter_count}")
@@ -73,3 +76,19 @@ with open(pollCSV, 'r') as csvfile:
     print("------------------")
     print(f"Winner : {winner} ")
     print("------------------")
+
+# write results in new csv file 
+with open(output_path, 'w', newline='') as resultsfile:
+
+    # Initialize csv.writer
+    writer = csv.writer(resultsfile)
+
+    # write titles in header 
+    writer.writerow(["Total Votes", "Khan votes (%)", "Total Khan Votes", "Correy votes (%)",
+    "Total Correy Votes", "Li votes (%)", "Total Li Votes", "O'Tooley votes (%)", "Total O'Tooley Votes", "Winner"]) 
+
+    # write results 
+    writer.writerow([str(voter_count), str(Khan_percentage), str(Khan_votes), str(Correy_percentage), str(Correy_votes), 
+    str(Li_percentage), str(Li_votes), str(OTooley_percentage), str(OTooley_votes), str(winner)])
+
+
