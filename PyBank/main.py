@@ -62,7 +62,7 @@ with open(bankCSV, 'r') as csvfile:
             min_profit = row[1]
             date_min = row[0]
         
-    # solution for average change, with round() function to include 2 decmial
+    # solution for average change, with round() function to include up to two decmials
     average_change = round((end_month - start_month)/(month_total-1), 2)
 
     # Print out the results in terminal
