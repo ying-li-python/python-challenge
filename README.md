@@ -1,7 +1,9 @@
 # Python Challenge
 
-PyBoss - script to convert employee records to the required format
+This folder contains resulting Python scripts to three distinct Python Challenges.  
 
-PyPoll - script to analyze poll data 
+1. PyBoss - script to convert employee records to the required format
 
-PyBank - script to analyze financial records
+2. PyPoll - script to analyze poll data 
+
+3. PyBank - script to analyze financial records
