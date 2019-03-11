@@ -1,3 +1,8 @@
+# This script is designed to help analyze poll data
+# For instance, from all votes (by voter ID), calculate the total number of votes,
+# number of votes for each candidate, the percentage of votes per candidate, and the winner of the election
+
+
 # import dependencies
 import os
 import csv
