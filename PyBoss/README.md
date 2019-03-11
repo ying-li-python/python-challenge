@@ -1,8 +1,8 @@
 # PyBoss Challenge 
 
-This Python script helps convert employee records to the appropriate format.
+#### This Python script helps convert employee records to the appropriate format.
 
-Original data file: 
+> Original data file: 
 
 <html>
 <center>
@@ -11,7 +11,7 @@ Original data file:
 </html>
 
 
-Result: 
+> Result: 
 <html>
 <center>
 <img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/output.png">
