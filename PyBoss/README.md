@@ -1,6 +1,6 @@
 # PyBoss Challenge 
 
-#### This Python script helps convert employee records to the appropriate format.
+This Python script helps convert employee records to the appropriate format.
 
 > Original data file: 
 
