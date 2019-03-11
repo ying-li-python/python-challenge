@@ -85,28 +85,30 @@ with open(employeeCSV, 'r') as csvfile:
     # create for loop to clean data
     for row in csvreader:
      
+        # create list of employee IDs for each employee
         employeeID.append(row[0])
 
-        # split Name into First and Last Name 
+        # split Name into First and Last Name of each employee
         first_name = row[1].split()[0]
         last_name = row[1].split()[1]
 
+        # append first and last name to list
         first_name_final.append(first_name)
         last_name_final.append(last_name)
 
-        # create a list for DOB
+        # create list of date of birth of each employee
         birthDate.append(row[2])
 
-        # convert birthDate to MM/DD/YY format
+        # for loop to convert birthDate to MM/DD/YY format
         for dates in birthDate:
             revised_birthDate = '/'.join(dates.split('-'))
         all_birthDate.append(revised_birthDate)
 
 
-        # create a list of SSNs 
+        # create list of SSN of each empolyee
         socialsecurity_data.append(row[3])
 
-        # convert SSN to hide first five numbers 
+        # for loop to convert SSN to hide first five numbers with *
         for numbers in socialsecurity_data: 
             for i in numbers:
                 firstFive = numbers[0:6]
@@ -115,15 +117,17 @@ with open(employeeCSV, 'r') as csvfile:
                 result_SSN = firstFive + lastFive
         final_SSN.append(result_SSN)
         
+        # create list of state location of each employee
         state.append(row[4])
 
+        # for loop to convert state names to abbreviations 
         for name in state: 
             for statename, value in us_state_abbrev.items():
                 if name == statename: 
                     renamed_state = value
         revised_states.append(renamed_state)
 
-# assign a variable with all lists
+# assign a variable to cleaned lists 
 employee_cleaned = zip(employeeID, first_name_final, last_name_final, all_birthDate, final_SSN, revised_states)
 
 # write results to new csv file 
