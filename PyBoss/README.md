@@ -1,6 +1,6 @@
 # PyBoss Challenge 
 
-Let's figure out how to convert older employee records to the appropriate format for HR. This folder contains the script to do so. 
+Let's figure out how to convert employee records to the appropriate format for HR. This folder contains the script to do so. 
 
 > Original data file: 
 
