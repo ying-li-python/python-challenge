@@ -1,5 +1,5 @@
 # This script is designed to help convert employee records to the required format
-# For instance, The first five numbers of an employee's SSN should be hidden using an (*),
+# For instance, the first five numbers of an employee's SSN should be hidden using an (*),
 # and employee location by state should be converted to the state abbreviation 
 # (e.g., California as CA)
 
