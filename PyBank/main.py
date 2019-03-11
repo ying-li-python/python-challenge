@@ -1,3 +1,8 @@
+# This script is designed to help analyze financial records
+# For instance, calculations for total profit for the period, total months, average change, 
+# and the month that showed greatest increase or decrease of profits 
+
+
 # import dependencies 
 import os
 import csv
