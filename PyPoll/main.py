@@ -67,30 +67,28 @@ with open(pollCSV, 'r') as csvfile:
         winner = "Li"
 
 
-    # print results
-    print("Election Results")
-    print("------------------")
-    print(f"Total votes: {voter_count}")
-    print("------------------")
-    print(f"Khan: {Khan_percentage}% ({Khan_votes})")
-    print(f"Correy: {Correy_percentage}% ({Correy_votes})")
-    print(f"Li: {Li_percentage}% ({Li_votes})")
-    print(f"O'Tooley: {OTooley_percentage}% ({OTooley_votes})")
-    print("------------------")
-    print(f"Winner : {winner} ")
-    print("------------------")
-
-# write results in new csv file 
+# write results in txt file and print in terminal
 with open("output.txt", "w") as output_file:
 
     output_file.write("Election Results" + "\n")
+    print("Election Results")
     output_file.write("------------------" + "\n")
+    print("------------------")
     output_file.write(f"Total votes: {voter_count}" + "\n")
+    print(f"Total votes: {voter_count}")
     output_file.write("------------------" + "\n")
+    print("------------------")
     output_file.write(f"Khan: {Khan_percentage}% ({Khan_votes})" + "\n")
+    print(f"Khan: {Khan_percentage}% ({Khan_votes})")
     output_file.write(f"Correy: {Correy_percentage}% ({Correy_votes})" + "\n")
+    print(f"Correy: {Correy_percentage}% ({Correy_votes})")
     output_file.write(f"Li: {Li_percentage}% ({Li_votes})")
+    print(f"Li: {Li_percentage}% ({Li_votes})")
     output_file.write(f"O'Tooley: {OTooley_percentage}% ({OTooley_votes})" + "\n")
+    print(f"O'Tooley: {OTooley_percentage}% ({OTooley_votes})")
     output_file.write("------------------" + "\n")
+    print("------------------")
     output_file.write(f"Winner : {winner} " + "\n")
+    print(f"Winner : {winner} ")
     output_file.write("------------------" + "\n")
+    print("------------------")
