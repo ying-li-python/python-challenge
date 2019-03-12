@@ -106,7 +106,7 @@ with open(employeeCSV, 'r') as csvfile:
 
         # for loop to convert birthDate to MM/DD/YY format
         for dates in birthDate:
-            revised_birthDate = '/'.join(dates.split('-'))
+            revised_birthDate = '/'.join(reversed(dates.split('-')))
         all_birthDate.append(revised_birthDate)
 
 
