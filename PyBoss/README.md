@@ -6,7 +6,7 @@ Let's figure out how to convert employee records to the appropriate format for H
 
 <html>
 <center>
-<img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/original_sm.png">
+<img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/original_data.png">
 </center>
 </html>
 
@@ -14,6 +14,6 @@ Let's figure out how to convert employee records to the appropriate format for H
 > Result: 
 <html>
 <center>
-<img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/output_sm.png">
+<img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/output_data.png">
 </center>
 </html>
