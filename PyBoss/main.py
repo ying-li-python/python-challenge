@@ -1,8 +1,15 @@
-# This script is designed to help convert employee records to the required format
-# For instance, the first five numbers of an employee's SSN should be hidden using an (*),
-# and employee location by state should be converted to the state abbreviation 
-# (e.g., California as CA)
+"""
+This script is designed to help convert employee records to the required format. 
 
+"Full name" is split into "First Name" and "Last Name"
+Birthdate (YYYY-MM-DD) is converted to MM/DD/YYYY 
+9-digit SSN is converted to hide the first 5 numbers of the SSN with an asterisk (*)
+States are converted to their abbreviations (California -> CA)
+
+
+Example: $ python main.py
+
+"""
 # import dependencies 
 import os
 import csv
