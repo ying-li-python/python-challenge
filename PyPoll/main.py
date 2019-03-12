@@ -82,7 +82,7 @@ with open("output.txt", "w") as output_file:
     print(f"Khan: {Khan_percentage}% ({Khan_votes})")
     output_file.write(f"Correy: {Correy_percentage}% ({Correy_votes})" + "\n")
     print(f"Correy: {Correy_percentage}% ({Correy_votes})")
-    output_file.write(f"Li: {Li_percentage}% ({Li_votes})")
+    output_file.write(f"Li: {Li_percentage}% ({Li_votes})" + "\n")
     print(f"Li: {Li_percentage}% ({Li_votes})")
     output_file.write(f"O'Tooley: {OTooley_percentage}% ({OTooley_votes})" + "\n")
     print(f"O'Tooley: {OTooley_percentage}% ({OTooley_votes})")
