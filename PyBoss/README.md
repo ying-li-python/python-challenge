@@ -17,6 +17,6 @@ Original txt:
 Result: 
 <html>
 <center>
-<img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/outputdata.png">
+<img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/output.png">
 </center>
 </html>
