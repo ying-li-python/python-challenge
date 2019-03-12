@@ -10,9 +10,6 @@ import csv
 # add variable to the CSV file 
 bankCSV = os.path.join(os.path.dirname(__file__), 'Resources', 'budget_data.csv')
 
-# set output path 
-output_path = os.path.join("output.csv")
-
 
 # create empty lists for calculating total months, net profit/losses
 date = []
@@ -80,16 +77,13 @@ with open(bankCSV, 'r') as csvfile:
     print(f'Greatest Increase in Profits: {date_max} (${max_profit})')
     print(f'Greatest Decrease in Profits: {date_min} (${min_profit})')
 
-# write results in new csv file 
-with open(output_path, 'w', newline='') as resultsfile:
+# write results in new text file
+with open("output.txt", "w") as output_file:
 
-    # Initialize csv.writer
-    writer = csv.writer(resultsfile)
-
-    # write titles in header 
-    writer.writerow(["Total Months", "Total($)", "Average Change ($)", "Greatest Increase in Profits (date)",
-    "Amount ($)", "Greatest Decrease in Profits (date)", "Amount ($)"]) 
-
-    # write results 
-    writer.writerow([str(month_total), str(total_net_profit), str(average_change), str(date_max), str(max_profit), 
-    str(date_min), str(min_profit)])
+    output_file.write("Financial Analysis" + "\n")
+    output_file.write("------------------" + "\n")
+    output_file.write(f'Total Months: {month_total}' + "\n")
+    output_file.write(f'Total: ${total_net_profit}'+ "\n")
+    output_file.write(f'Average Change: ${average_change}' + "\n")
+    output_file.write(f'Greatest Increase in Profits: {date_max} (${max_profit})'+ "\n")
+    output_file.write(f'Greatest Decrease in Profits: {date_min} (${min_profit})'+ "\n")
