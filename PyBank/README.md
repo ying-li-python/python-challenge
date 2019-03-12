@@ -1,6 +1,8 @@
-# PyBank 
+# PyBank Challenge
 
-We want to know how our company is doing financially from 2010 to 2017. This folder contains the script that displays the  total months, amount total, average change, and the month with the greatest % increase or decrease of the entire period. 
+How can you tell if a company, out of hundreds, is doing financially well? Let's create a script that helps analyze financial records of any given company. 
+
+This folder contains a script that looks at total months, average changes, profit/losses across the entire period.
 
 Example results:
 <html> 
