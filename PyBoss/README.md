@@ -9,7 +9,7 @@ Original txt:
 
 <html>
 <center>
-<img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/original_data.png">
+<img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/originaldata.png">
 </center>
 </html>
 
@@ -17,6 +17,6 @@ Original txt:
 Result: 
 <html>
 <center>
-<img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/output_data.png">
+<img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/outputdata.png">
 </center>
 </html>
