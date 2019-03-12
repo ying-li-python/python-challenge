@@ -107,11 +107,13 @@ with open(employeeCSV, 'r') as csvfile:
         # for loop to convert birthDate to MM/DD/YY format
         for dates in birthDate:
             revised_birthDate = '/'.join(reversed(dates.split('-')))
+            # result: DD/MM/YYYY
 
             for i in revised_birthDate: 
                 month = revised_birthDate[3:6]
-                day = revised_birthDate[0:4]
-                year = revised_birthDate[6:11]
+                day = revised_birthDate[0:3]
+                year = revised_birthDate[6:12]
+                
                 final_date = month + day + year
 
         corrected_birthDate.append(final_date)
