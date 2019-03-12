@@ -8,7 +8,7 @@ Let's figure out how to convert employee records to the appropriate format for H
 
 #### PyPoll 
 
-We want to analyze poll records for three candidates running for a government position in a small county. This folder contains the script that prints out the overall winner, the total number of votes per candidate (and percentage), and total votes.
+Election results are here! Let's tally up the votes for each candidate. This folder contains the script that prints out the overall winner, the total number of votes per candidate (and percentage), and total votes.
 
 #### PyBank 
 
