@@ -109,8 +109,8 @@ with open(employeeCSV, 'r') as csvfile:
             revised_birthDate = '/'.join(reversed(dates.split('-')))
 
             for i in revised_birthDate: 
-                month = revised_birthDate[4:6]
-                day = revised_birthDate[0:3]
+                month = revised_birthDate[3:6]
+                day = revised_birthDate[0:4]
                 year = revised_birthDate[6:11]
                 final_date = month + day + year
 
