@@ -1,5 +1,7 @@
 """
-This script helps show specific metrics of a given paragraph (in terminal): 
+This script helps show specific metrics of a given paragraph. 
+
+Results will show (in terminal):
 
 Word count 
 Sentence count 
