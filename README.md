@@ -1,6 +1,6 @@
 # Python Challenge
 
-This folder contains resulting Python scripts to three distinct Python Challenges.  
+This folder contains resulting Python scripts of four distinct Python Challenges.  
 
 #### PyBoss 
 
