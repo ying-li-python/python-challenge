@@ -1,5 +1,7 @@
 """
-This script is designed to help analyze financial records which calculates: 
+This script is designed to help analyze financial records. 
+
+Results will return: 
 Total profit for the period
 Total months 
 Average change 
