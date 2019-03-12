@@ -67,23 +67,21 @@ with open(bankCSV, 'r') as csvfile:
     # solution for average change, with round() function to include up to two decmials
     average_change = round((end_month - start_month)/(month_total-1), 2)
 
-    # Print out the results in terminal
 
-    print("Financial Analysis")
-    print("------------------")
-    print(f'Total Months: {month_total}')
-    print(f'Total: ${total_net_profit}')
-    print(f'Average Change: ${average_change}')
-    print(f'Greatest Increase in Profits: {date_max} (${max_profit})')
-    print(f'Greatest Decrease in Profits: {date_min} (${min_profit})')
-
-# write results in new text file
+# write results in new text file and print results in terminal 
 with open("output.txt", "w") as output_file:
 
     output_file.write("Financial Analysis" + "\n")
+    print("Financial Analysis")
     output_file.write("------------------" + "\n")
+    print("------------------")
     output_file.write(f'Total Months: {month_total}' + "\n")
+    print(f'Total Months: {month_total}')
     output_file.write(f'Total: ${total_net_profit}'+ "\n")
+    print(f'Total: ${total_net_profit}')
     output_file.write(f'Average Change: ${average_change}' + "\n")
+    print(f'Average Change: ${average_change}')
     output_file.write(f'Greatest Increase in Profits: {date_max} (${max_profit})'+ "\n")
+    print(f'Greatest Increase in Profits: {date_max} (${max_profit})')
     output_file.write(f'Greatest Decrease in Profits: {date_min} (${min_profit})'+ "\n")
+    print(f'Greatest Increase in Profits: {date_max} (${max_profit})')
