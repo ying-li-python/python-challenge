@@ -19,7 +19,7 @@ employeeID = []
 first_name_final = []
 last_name_final = []
 birthDate = []
-all_birthDate = []
+corrected_birthDate = []
 socialsecurity_data = []
 final_SSN = []
 state = []
@@ -107,7 +107,14 @@ with open(employeeCSV, 'r') as csvfile:
         # for loop to convert birthDate to MM/DD/YY format
         for dates in birthDate:
             revised_birthDate = '/'.join(reversed(dates.split('-')))
-        all_birthDate.append(revised_birthDate)
+
+            for i in revised_birthDate: 
+                month = revised_birthDate[4:6]
+                day = revised_birthDate[0:3]
+                year = revised_birthDate[6:11]
+                final_date = month + day + year
+
+        corrected_birthDate.append(final_date)
 
 
         # create list of SSN of each empolyee
@@ -133,7 +140,7 @@ with open(employeeCSV, 'r') as csvfile:
         revised_states.append(renamed_state)
 
 # assign a variable to cleaned lists 
-employee_cleaned = zip(employeeID, first_name_final, last_name_final, all_birthDate, final_SSN, revised_states)
+employee_cleaned = zip(employeeID, first_name_final, last_name_final, corrected_birthDate, final_SSN, revised_states)
 
 # write results to new csv file 
 with open('output.csv', 'w', newline='') as resultsfile:
