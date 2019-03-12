@@ -10,5 +10,5 @@ Example passage:
 
 Results:
 <html> 
-<img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyParagraph/Images/result.png">
+<img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyParagraph/Images/results.png">
 </html>
