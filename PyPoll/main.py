@@ -10,9 +10,6 @@ import csv
 # find path for csv file 
 pollCSV = os.path.join(os.path.dirname(__file__), 'Resources', 'election_data.csv')
 
-# set output path
-
-output_path = os.path.join("output.csv")
 
 # create empty lists for voter_ID, candidate total, and for each candidate
 voter_ID = []
@@ -84,17 +81,16 @@ with open(pollCSV, 'r') as csvfile:
     print("------------------")
 
 # write results in new csv file 
-with open(output_path, 'w', newline='') as resultsfile:
+with open("output.txt", "w") as output_file:
 
-    # Initialize csv.writer
-    writer = csv.writer(resultsfile)
-
-    # write titles in header 
-    writer.writerow(["Total Votes", "Khan votes (%)", "Total Khan Votes", "Correy votes (%)",
-    "Total Correy Votes", "Li votes (%)", "Total Li Votes", "O'Tooley votes (%)", "Total O'Tooley Votes", "Winner"]) 
-
-    # write results 
-    writer.writerow([str(voter_count), str(Khan_percentage), str(Khan_votes), str(Correy_percentage), str(Correy_votes), 
-    str(Li_percentage), str(Li_votes), str(OTooley_percentage), str(OTooley_votes), str(winner)])
-
-
+    output_file.write("Election Results" + "\n")
+    output_file.write("------------------" + "\n")
+    output_file.write(f"Total votes: {voter_count}" + "\n")
+    output_file.write("------------------" + "\n")
+    output_file.write(f"Khan: {Khan_percentage}% ({Khan_votes})" + "\n")
+    output_file.write(f"Correy: {Correy_percentage}% ({Correy_votes})" + "\n")
+    output_file.write(f"Li: {Li_percentage}% ({Li_votes})")
+    output_file.write(f"O'Tooley: {OTooley_percentage}% ({OTooley_votes})" + "\n")
+    output_file.write("------------------" + "\n")
+    output_file.write(f"Winner : {winner} " + "\n")
+    output_file.write("------------------" + "\n")
