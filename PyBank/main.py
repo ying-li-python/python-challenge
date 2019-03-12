@@ -1,8 +1,13 @@
-# This script is designed to help analyze financial records
-# For instance, calculations for total profit for the period, total months, average change, 
-# and the month that showed greatest increase or decrease of profits 
+"""
+This script is designed to help analyze financial records which calculates: 
+Total profit for the period
+Total months 
+Average change 
+Month that showed greatest increase or decrease of profits 
 
+Example: $ python main.py
 
+"""
 # import dependencies 
 import os
 import csv
