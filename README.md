@@ -6,7 +6,7 @@ This folder contains resulting Python scripts of four distinct Python Challenges
 
 In this data-centric world, we have to mantain old records as we upgrade into newer systems. But, old records have to be converted to an appropriate format to be read by the new system. In this case, let's convert employee records. 
 
-This folder contains the script that for each employee, converts fullnames into first and last name, the 9-digit SSN to hide the first five numbers with an asterisk, location by state to their abbreivations (California -> CA), birthdate to MM/DD/YYYY.
+This folder contains the script that for each employee, converts fullnames into first and last name, from the 9-digit SSN to hide the first five numbers with an asterisk, location by state to their abbreivations (California -> CA), and birthdate from YYYY-DD-MM to MM/DD/YYYY.
 
 #### PyParagraph 
 
