@@ -1,3 +1,17 @@
+"""
+This script helps show specific metrics of a given paragraph. 
+
+Results will show (in terminal):
+
+Word count 
+Sentence count 
+Average sentence length
+Average letter count
+
+Example: $ python main.py
+
+"""
+
 # import dependencies 
 import os
 import re
