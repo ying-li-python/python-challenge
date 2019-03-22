@@ -23,7 +23,7 @@ bankCSV = os.path.join(os.path.dirname(__file__), 'Resources', 'budget_data.csv'
 months = []
 profits_over_time = []
 
-# open backCSV as csvfile using csvreader
+# open bankCSV as csvfile using csvreader
 with open(bankCSV, 'r') as csvfile: 
     csvreader = csv.reader(csvfile)
     

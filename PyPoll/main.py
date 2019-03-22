@@ -38,12 +38,12 @@ with open(pollCSV, 'r') as polldata:
 
     # create for loop that matches unique candidate and generate vote count 
     for names in set(candidate_votes): 
-        k = names 
-        v = candidate_votes.count(names)
-        p = round((v / voter_count) * 100, 2) 
-        p = "{}%".format(p)
-        v = "({})".format(v)
-        d[k] = p, v 
+        key = names 
+        votes = candidate_votes.count(names)
+        percentage = round((votes / voter_count) * 100, 2) 
+        percentage = "{}%".format(percentage)
+        votes = "({})".format(votes)
+        d[key] = percentage, votes 
 
 
     # generate results in output file and print in terminal 
@@ -59,12 +59,12 @@ with open(pollCSV, 'r') as polldata:
         print(f"Total votes: {voter_count}")
         print("------------------")
 
-        for k, v in d.items():
-            percentage= str(v[0])
-            votes = str(v[1])
-            print(str(k) + ": " + str(percentage) + " " + str(votes))  
-            winner = max(d, key=lambda k:d[k])
-            results = str(k) + ": " + str(percentage) + " " + str(votes) + "\n"
+        for key, votes in d.items():
+            percentage= str(votes[0])
+            votes = str(votes[1])
+            print(str(key) + ": " + str(percentage) + " " + str(votes))  
+            winner = max(d, key=lambda key:d[key])    
+            results = str(key) + ": " + str(percentage) + " " + str(votes) + "\n"
             output_file.write(results)
 
         print("------------------")

@@ -32,7 +32,7 @@ final_SSN = []
 state = []
 revised_states = []
 
-# open backCSV as csvfile using csvreader
+# open employeeCSV as csvfile using csvreader
 with open(employeeCSV, 'r') as csvfile: 
     csvreader = csv.reader(csvfile, delimiter=",")
 
