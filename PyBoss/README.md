@@ -9,7 +9,12 @@ This folder contains the script that for each employee, converts fullnames into 
 
 ## Demonstration 
 
-This csv file needs to be converted to be an appropriate format for HR. 
+This csv file needs to be converted to be an appropriate format for HR.  
+
+```
+head employee_data.csv 
+```
+Will show: 
 
 <img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/originaldata.png">
 
@@ -20,9 +25,12 @@ To run the script:
 cd PyBoss
 python main.py 
 ```
-Running this script will generate an output file in the same folder. You're done! 
+Running this script will generate an output csv file in the same folder. You're done! 
 
-Output: 
+```
+head output.csv 
+```
+Will show: 
 
 <img src="https://raw.githubusercontent.com/ying-li-python/python-challenge/master/PyBoss/Images/output.png">
 
