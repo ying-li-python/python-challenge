@@ -27,6 +27,8 @@ python main.py
 ```
 Running this script will generate an output csv file in the same folder. You're done! 
 
+Let's check our results.
+
 ```
 head output.csv 
 ```
